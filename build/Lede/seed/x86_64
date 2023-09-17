@@ -2,6 +2,13 @@ CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
 CONFIG_GRUB_IMAGES=y
+CONFIG_LIBQMI_COLLECTION_BASIC=y
+CONFIG_LIBQMI_WITH_MBIM_QMUX=y
+CONFIG_LIBQMI_WITH_QRTR_GLIB=y
+CONFIG_MODEMMANAGER_WITH_MBIM=y
+CONFIG_MODEMMANAGER_WITH_QMI=y
+CONFIG_MODEMMANAGER_WITH_QRTR=y
+CONFIG_PACKAGE_6in4=y
 # CONFIG_PACKAGE_UnblockNeteaseMusic-Go is not set
 # CONFIG_PACKAGE_adbyby is not set
 CONFIG_PACKAGE_bash=y
@@ -11,15 +18,20 @@ CONFIG_PACKAGE_boost-date_time=y
 CONFIG_PACKAGE_boost-program_options=y
 CONFIG_PACKAGE_boost-system=y
 CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_chat=y
+CONFIG_PACKAGE_comgt=y
 CONFIG_PACKAGE_coreutils-nohup=y
 CONFIG_PACKAGE_dnsmasq_full_nftset=y
+CONFIG_PACKAGE_glib2=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ipt2socks=y
 CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
 CONFIG_PACKAGE_iptables-mod-iprange=y
 # CONFIG_PACKAGE_iptables-mod-ipsec is not set
 CONFIG_PACKAGE_iptables-mod-socket=y
+CONFIG_PACKAGE_ipv6helper=y
 CONFIG_PACKAGE_jansson=y
 CONFIG_PACKAGE_kcptun-client=y
 CONFIG_PACKAGE_kcptun-config=y
@@ -31,35 +43,65 @@ CONFIG_PACKAGE_kcptun-config=y
 # CONFIG_PACKAGE_kmod-crypto-kpp is not set
 # CONFIG_PACKAGE_kmod-crypto-md5 is not set
 CONFIG_PACKAGE_kmod-inet-diag=y
+CONFIG_PACKAGE_kmod-ip6tables=y
 # CONFIG_PACKAGE_kmod-ipsec is not set
 CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
 CONFIG_PACKAGE_kmod-ipt-iprange=y
 # CONFIG_PACKAGE_kmod-ipt-ipsec is not set
+CONFIG_PACKAGE_kmod-ipt-nat6=y
 CONFIG_PACKAGE_kmod-ipt-socket=y
+CONFIG_PACKAGE_kmod-iptunnel=y
 # CONFIG_PACKAGE_kmod-iptunnel6 is not set
+CONFIG_PACKAGE_kmod-mhi-bus=y
+CONFIG_PACKAGE_kmod-mhi-net=y
+CONFIG_PACKAGE_kmod-mhi-wwan-mbim=y
 CONFIG_PACKAGE_kmod-netlink-diag=y
 # CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+CONFIG_PACKAGE_kmod-nf-ipt6=y
 CONFIG_PACKAGE_kmod-nf-log6=y
+CONFIG_PACKAGE_kmod-nf-nat6=y
 CONFIG_PACKAGE_kmod-nf-reject6=y
 CONFIG_PACKAGE_kmod-nf-socket=y
 CONFIG_PACKAGE_kmod-nft-core=y
 CONFIG_PACKAGE_kmod-nft-nat=y
 CONFIG_PACKAGE_kmod-nft-socket=y
 CONFIG_PACKAGE_kmod-nft-tproxy=y
+CONFIG_PACKAGE_kmod-qmi_wwan_q=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
 # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
+CONFIG_PACKAGE_kmod-sit=y
 # CONFIG_PACKAGE_kmod-tcp-bbr is not set
+CONFIG_PACKAGE_kmod-usb-ehci=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
+CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
+CONFIG_PACKAGE_kmod-usb-net-rndis=y
+CONFIG_PACKAGE_kmod-usb-serial=y
+CONFIG_PACKAGE_kmod-usb-serial-option=y
+CONFIG_PACKAGE_kmod-usb-serial-wwan=y
+CONFIG_PACKAGE_kmod-usb-wdm=y
+CONFIG_PACKAGE_kmod-usb-xhci-hcd=y
+CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_kmod-usb2-pci=y
+CONFIG_PACKAGE_kmod-usb3=y
 # CONFIG_PACKAGE_kmod-wireguard is not set
+CONFIG_PACKAGE_kmod-wwan=y
 CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
 CONFIG_PACKAGE_libevent2=y
+CONFIG_PACKAGE_libffi=y
 CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblua5.3=y
+CONFIG_PACKAGE_libmbim=y
 # CONFIG_PACKAGE_libminiupnpc is not set
 # CONFIG_PACKAGE_libnatpmp is not set
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libnftnl=y
 # CONFIG_PACKAGE_libparted is not set
+CONFIG_PACKAGE_libpcre2=y
+CONFIG_PACKAGE_libqmi=y
+CONFIG_PACKAGE_libqrtr-glib=y
 CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libyaml=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
@@ -124,15 +166,28 @@ CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall2-zh-cn=y
+CONFIG_PACKAGE_luci-proto-3g=y
+CONFIG_PACKAGE_luci-proto-3x=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-mbim=y
+CONFIG_PACKAGE_luci-proto-modemmanager=y
+CONFIG_PACKAGE_luci-proto-qmi=y
 # CONFIG_PACKAGE_luci-proto-wireguard is not set
 CONFIG_PACKAGE_luci-theme-design=y
 CONFIG_PACKAGE_luci-theme-kucat=y
+CONFIG_PACKAGE_minicom=y
+CONFIG_PACKAGE_modemmanager=y
 CONFIG_PACKAGE_mosdns=y
 CONFIG_PACKAGE_nftables-json=y
 # CONFIG_PACKAGE_nlbwmon is not set
+CONFIG_PACKAGE_odhcp6c=y
+CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
+CONFIG_PACKAGE_odhcpd-ipv6only=y
+CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 CONFIG_PACKAGE_openssh-sftp-server=y
 # CONFIG_PACKAGE_parted is not set
 # CONFIG_PACKAGE_pdnsd-alt is not set
+CONFIG_PACKAGE_qmi-utils=y
 CONFIG_PACKAGE_redsocks2=y
 CONFIG_PACKAGE_ruby=y
 CONFIG_PACKAGE_ruby-bigdecimal=y
@@ -155,7 +210,10 @@ CONFIG_PACKAGE_trojan=y
 CONFIG_PACKAGE_trojan-go=y
 CONFIG_PACKAGE_trojan-plus=y
 CONFIG_PACKAGE_tuic-client=y
+CONFIG_PACKAGE_umbim=y
 CONFIG_PACKAGE_unzip=y
+CONFIG_PACKAGE_uqmi=y
+CONFIG_PACKAGE_usb-modeswitch=y
 CONFIG_PACKAGE_v2dat=y
 CONFIG_PACKAGE_v2ray-core=y
 CONFIG_PACKAGE_v2ray-geoip=y
@@ -164,8 +222,11 @@ CONFIG_PACKAGE_v2ray-plugin=y
 # CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wireguard-tools is not set
+CONFIG_PACKAGE_wwan=y
 CONFIG_PACKAGE_xray-plugin=y
 # CONFIG_PACKAGE_zerotier is not set
+CONFIG_PCRE2_JIT_ENABLED=y
+CONFIG_QCOW2_IMAGES=y
 CONFIG_SING_BOX_WITH_CLASH_API=y
 CONFIG_SING_BOX_WITH_DHCP=y
 CONFIG_SING_BOX_WITH_ECH=y
